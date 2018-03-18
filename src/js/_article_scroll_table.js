@@ -53,7 +53,6 @@ this.createArticteScrollTable = function () {
     table.html(html);
     table.find('.gt-article-scroll').each(function () {
         $(this).on('click', function () {
-
             self.scrollToArticle($(this).attr('data-href'));
         });
     });
@@ -65,7 +64,6 @@ this.scrollToArticle = function (attr) {
     $('html').animate({scrollTop: $('#' + attr).offset().top - 110}, 1100);
 
 };
-
 
 this.showArtidleShadow = function () {
     $(".gt-article").each(function () {

@@ -34,6 +34,8 @@ GoToTrip = function () {
 
     //= ./_partnership
 
+    //= ./_select
+
 
 
 /////////////////////does not work

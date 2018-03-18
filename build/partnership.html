@@ -44,7 +44,7 @@
             <div class="gt-header-top">
                 <div class="container">
                     <div class="gt-search-holder">
-                        <span class="gt-search"></span>
+                        <span class="gt-search-button"></span>
                     </div>
                     <div class="gt-header-logo">
                         <a class="gt-logo" href="/"><img src="./img/logo-white.svg" alt="GoToTrip"></a>
@@ -67,7 +67,7 @@
                             <li><a href="/publications.html">Публикации</a></li>
                             <li class="gt-enter  gt-not-registered"><span>Вход</span></li>
                             <li class="gt-enter gt-registered"><span>Длинноеимя</span></li>
-                            <li><span class="gt-search"></span></li>
+                            <li><span class="gt-search-button"></span></li>
                         </ul>
                     </div>
                 </div>
@@ -195,15 +195,15 @@
 <div class="gt-article-wrapper gt-margin">
     <div class="container container-no-padd">
         <div class="gt-article-table-wrapper gt-article-table-wrapper-left">
-            <div class="gt-article-table">
-                <a href=".#" class="gt-active"><span>Авиабилеты</span></a>
-                <a href=".#"><span>Отели</span></a>
-                <a href=".#"><span>Прокат авто</span></a>
-                <a href=".#"><span>Ж/д и автобусы</span></a>
-                <a href=".#"><span>Круизы</span></a>
-                <a href=".#"><span>Горящие туры</span></a>
-                <a href=".#"><span>Страхование</span></a>
-                <a href=".#"><span>Визы</span></a>
+            <div id = "gt-partnership-menu" class="gt-article-table">
+                <div class="gt-active" data-href = "gt-partnership-avia"><span>Авиабилеты</span></div>
+                <div data-href="gt-partnership-hotels"><span>Отели</span></div>
+                <div data-href="gt-partnership-cars"><span>Прокат авто</span></div>
+                <div data-href="gt-partnership-train"><span>Ж/д и автобусы</span></div>
+                <div data-href="gt-partnership-cruises"><span>Круизы</span></div>
+                <div data-href="gt-partnership-hot"><span>Горящие туры</span></div>
+                <div data-href="gt-partnership-insurance"><span>Страхование</span></div>
+                <div data-href="gt-partnership-visas"><span>Визы</span></div>
             </div>
         </div>
         <div class="gt-article-outer-half">
@@ -228,7 +228,7 @@
                     </p>
             
                 </div>
-                <div class="gt-partnership-outer">
+                <div id = "gt-partnership-avia" class="gt-partnership-outer">
                     <div class="gt-partnership-outer-header">
                         <h2>Авиабилеты</h2>
                     </div>
@@ -300,7 +300,7 @@
             
                     </div>
                 </div>
-                <div class="gt-partnership-outer">
+                <div id = "gt-partnership-hotels" class="gt-partnership-outer">
                     <div class="gt-partnership-outer-header">
                         <h2>Отели</h2>
                     </div>
@@ -579,7 +579,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="gt-partnership-outer">
+                <div id = "gt-partnership-cars" class="gt-partnership-outer">
                     <div class="gt-partnership-outer-header">
                         <h2>Прокат авто</h2>
                     </div>
@@ -858,7 +858,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="gt-partnership-outer">
+                <div  id = "gt-partnership-train" class="gt-partnership-outer">
                     <div class="gt-partnership-outer-header">
                         <h2>Ж/д и автобусы</h2>
                     </div>
@@ -1011,7 +1011,7 @@
             
                     </div>
                 </div>
-                <div class="gt-partnership-outer">
+                <div   id = "gt-partnership-cruises" class="gt-partnership-outer">
                     <div class="gt-partnership-outer-header">
                         <h2>Круизы</h2>
                     </div>
@@ -1116,7 +1116,7 @@
             
                     </div>
                 </div>
-                <div class="gt-partnership-outer">
+                <div  id = "gt-partnership-hot" class="gt-partnership-outer">
                     <div class="gt-partnership-outer-header">
                         <h2>Горящие туры</h2>
                     </div>
@@ -1156,7 +1156,7 @@
             
                     </div>
                 </div>
-                <div class="gt-partnership-outer">
+                <div  id = "gt-partnership-insurance"  class="gt-partnership-outer">
                     <div class="gt-partnership-outer-header">
                         <h2>Страхование</h2>
                     </div>
@@ -1435,7 +1435,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="gt-partnership-outer">
+                <div id = "gt-partnership-visas" class="gt-partnership-outer">
                     <div class="gt-partnership-outer-header">
                         <h2>Визы</h2>
                     </div>
@@ -1495,26 +1495,8 @@
         </div>
         <div class="gt-article-table-wrapper">
             <h2 class="gt-article-table-header">
-                НОВОСТИ ПО ТЕМЕ
-
+               Акции
             </h2>
-            <a href="./new-single-page.html" class="gt-news-aside">
-                <div class="gt-news-aside-img">
-                    <div class="gt-img-holder-abs">
-                        <img src="./img/news/news-5.png" alt="">
-                    </div>
-                </div>
-                <div class="gt-news-small-text">
-                    <div class="gt-news-link">
-                        <span>31.04.2017</span>
-                        <i class="fa fa-eye"></i>
-                        <span>215</span>
-                    </div>
-                    <div class="gt-news-header">
-                        <p>Заголовок статьи статьи статьи статьи статьи</p>
-                    </div>
-                </div>
-            </a>
             <div class="gt-article-news gt-margin">
                 <a href="./new-single-page.html" class="gt-news-prev">
                     <div class="gt-news-prev-img">
@@ -1576,24 +1558,61 @@
                         <p class="gt-news-prev-date">28.07.2007</p>
                     </div>
                 </a>
+                <a href="./new-single-page.html" class="gt-news-prev">
+                    <div class="gt-news-prev-img">
+                        <div class="gt-img-holder-abs">
+                            <img src="./img/news/prew-news-1.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="gt-news-prev-text">
+                        <p>Заголовок короткой статьи в три строки плюс дата</p>
+                        <p class="gt-news-prev-date">28.07.2007</p>
+                    </div>
+                </a>
+                <a href="./new-single-page.html" class="gt-news-prev">
+                    <div class="gt-news-prev-img">
+                        <div class="gt-img-holder-abs">
+                            <img src="./img/news/prew-news-1.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="gt-news-prev-text">
+                        <p>Заголовок короткой статьи в три строки плюс дата</p>
+                        <p class="gt-news-prev-date">28.07.2007</p>
+                    </div>
+                </a>
+                <a href="./new-single-page.html" class="gt-news-prev">
+                    <div class="gt-news-prev-img">
+                        <div class="gt-img-holder-abs">
+                            <img src="./img/news/prew-news-1.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="gt-news-prev-text">
+                        <p>Заголовок короткой статьи в три строки плюс дата</p>
+                        <p class="gt-news-prev-date">28.07.2007</p>
+                    </div>
+                </a>
+                <a href="./new-single-page.html" class="gt-news-prev">
+                    <div class="gt-news-prev-img">
+                        <div class="gt-img-holder-abs">
+                            <img src="./img/news/prew-news-1.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="gt-news-prev-text">
+                        <p>Заголовок короткой статьи в три строки плюс дата</p>
+                        <p class="gt-news-prev-date">28.07.2007</p>
+                    </div>
+                </a>
             </div>
-            <a href="./new-single-page.html" class="gt-news-aside">
-                <div class="gt-news-aside-img">
-                    <div class="gt-img-holder-abs">
-                        <img src="./img/news/news-5.png" alt="">
-                    </div>
-                </div>
-                <div class="gt-news-small-text">
-                    <div class="gt-news-link">
-                        <span>31.04.2017</span>
-                        <i class="fa fa-eye"></i>
-                        <span>215</span>
-                    </div>
-                    <div class="gt-news-header">
-                        <p>Заголовок статьи статьи статьи статьи статьи</p>
-                    </div>
-                </div>
-            </a>
+
+
+            <div class="gt-read-more gt-margin">
+                <span for="gt-read-more-but" class="gt-btn gt-btn-white gt-btn-45">Смотреть еще</span>
+            </div>
+
         </div>
     </div>
 </div>

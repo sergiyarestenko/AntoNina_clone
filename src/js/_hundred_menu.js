@@ -7,8 +7,8 @@ this.manageGtActiveUlMenu = function (el) {
 };
 
 
-// if ($("*").is(".gt-hundret-menu")) {
-//     $(".gt-hundret-menu").on("click", function (event) {
+// if ($("*").is(".gt-hundred-menu")) {
+//     $(".gt-hundred-menu").on("click", function (event) {
 //         event.preventDefault();
 //         self.manageGtActiveUlMenu(event.target);
 //     });

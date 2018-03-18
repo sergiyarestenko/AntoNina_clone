@@ -3,7 +3,6 @@
 @import "../../stylesheets/_mixin";
 
 .gt-view-cards {
-
   flex-direction: column;
   width: 100%;
   &-header {
@@ -24,21 +23,31 @@
     a, span {
       align-self: flex-end
     }
-    p{
+    p {
       font-size: 14px;
       line-height: 1.5;
       margin: 1em 0;
-      color:@grey-border;
+      color: @grey-border;
     }
-    p+p{
+    p + p {
       margin-top: 0;
     }
   }
   &-slider {
     height: 240px;
   }
+  &-container{
+    margin-bottom: -30px !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .gt-view-cards-inner{
+      width: 25%;
+      margin-bottom: 30px;
+    }
+  }
   &-inner {
     padding: 0 15px 4px;
+    height: 240px;
     &-img {
       .gt-img-holder {
         width: 100%;
@@ -46,7 +55,6 @@
       }
     }
     &-outer {
-
 
       box-shadow: 4px 4px 15px rgba(0, 0, 0, .15);
     }
@@ -302,9 +310,7 @@
 
       }
 
-
     }
-
 
   }
   &-rating {
