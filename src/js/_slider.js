@@ -216,6 +216,7 @@ this.createSlider = function (currSlider, position) {
     }
 
     function setBaseWidth() {
+        console.log('setBaseWidth')
         baseWidth = currSlider.outerWidth() / screenConst;
         currSlider.find(".gt-slider-container").outerWidth((innerCount + 1) * baseWidth);
         inner.each(function () {
