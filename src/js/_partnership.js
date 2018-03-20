@@ -7,8 +7,9 @@ this.rowPartnership = function () {
 
 
 if ($("*").is("#gt-partnership")) {
-    $('#gt-partnership-row').on('click', self.rowPartnership)
-    $('#gt-partnership-column').on('click', self.columnPartnership)
+    $('#gt-partnership-row').on('click', self.columnPartnership);
+    $('#gt-partnership-column').on('click', self.rowPartnership);
+
     if ($("*").is("#gt-partnership-menu")) {
         $("#gt-partnership-menu").find('div').each(function () {
             $(this).on('click', function () {
