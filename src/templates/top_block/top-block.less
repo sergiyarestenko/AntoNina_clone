@@ -1,0 +1,80 @@
+@import "../../stylesheets/_palette";
+@import "../../stylesheets/_variables";
+@import "../../stylesheets/_mixin";
+
+.gt-top {
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+
+  .container {
+    min-height: 300px;
+   padding-top: 90px;
+    padding-bottom: 80px;
+    flex-direction: column;
+    position: relative;
+  }
+  &-inner {
+    margin-top: 90px;
+    margin-bottom: 15px;
+    color: @white;
+    background: url("../img/grid-pattern.png") repeat;
+    width: 600px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 340px;
+    padding: 60px 60px 60px 90px;
+    h1, p {
+      margin: auto 0;
+      justify-content: flex-start;
+      width: auto;
+    }
+    h1 {
+      font-weight: @bold;
+      font-size: 32px;
+      line-height: 45px;
+      position: relative;
+    }
+    p{
+      font-size: 18px;
+      font-weight: @normal;
+      line-height: 24px;
+    }
+    &-line {
+      background-color: @white;
+      height: 2px;
+      width: 160px;
+      margin: 30px 0;
+      justify-self: flex-start;
+    }
+    &.gt-top-inner-large{
+      h1{
+        font-size: 42px;
+        line-height: 50px;
+      }
+      p{
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+    }
+    &-underline{
+      position: relative;
+      padding-bottom: 3px;
+      &:after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: @white;
+        position: absolute;
+        left: 0;
+       bottom: 0px;
+      }
+    }
+
+  }
+}
