@@ -180,8 +180,8 @@
         </header>
         <div class="gt-wrapper" id = "gt-wrapper">
 <!-- ** -->
-<div class="gt-top gt-top-before-hundred gt-img-holder gt-shadow-70-reverse-100px" data-bg="country_page/france.png">
-    <div class="container">
+<div class=" gt-top gt-top-before-hundred gt-img-holder gt-shadow-70-reverse-100px" data-bg="country_page/france.png">
+    <div class="container test">
             <div class="gt-breadcrumbs">
                 <ul>
                     <li><a href=".#">Европа</a></li>
@@ -190,23 +190,39 @@
                 </ul>
             </div>
 
-        <div class="gt-search-panel-select test" >
-            <form  name="gt-search-select" id="gt-search-select">
-                <select
-                        name="gt-search-find-country"
-                        class="js-gt-select"
-                        data-name = "Выбрать страну"
-                >
-                    <option value="0">Австралия</option>
-                    <option value="1">Австрия</option>
-                    <option value="2">Азербайджан</option>
-                    <option value="3">Албания</option>
-                    <option value="4">Алжир</option>
-                    <option value="5">Ангола</option>
-                    <option value="6">Андорра</option>
-                </select>
+        <div class="gt-search-panel">
+            <form class="gt-search-panel-form" name="gt-search" id="gt-search">
+                <input type="text" name="gt-search-text" placeholder="Введите текст поиска">
+                <input type="submit" name="gt-search-submit" id="gt-search-submit">
+                <label for="gt-search-submit" class="gt-search-button"></label>
             </form>
         </div>
+
+
+        <div class="gt-hundred-menu-wrapper">
+            <div class="container">
+                <!--//= ../../search_panel/search-panel-->
+        
+                <p style=" font-size: 50px">test</p>
+        
+                <ul class="gt-hundred-menu">
+                    <li class="gt-hundred-menu-all  gt-active">
+                        <a href="/guide.html">Все</a></li>
+                    <li class="gt-hundred-menu-top">
+                        <a href="/guide-top.html">Топ 100</a></li>
+                    <li class="gt-hundred-menu-culture">
+                        <a href="/guide-culture-object.html">Культурные обьекты</a></li>
+                    <li class="gt-hundred-menu-nature">
+                        <a href="/guide-nature-and-animals.html">Природа и животные</a></li>
+                    <li class="gt-hundred-menu-relax">
+                        <a href="/guide-entertainment.html">Отдых и развлечения</a></li>
+                    <li class="gt-hundred-menu-wonders">
+                        <a href="/guide-wonders.html">Чудеса света</a></li>
+                </ul>
+            </div>
+        </div>
+
+
     </div>
 </div>
 <!-- ** -->
@@ -230,12 +246,711 @@
 </div>
 <!-- ** -->
 
-<!--//= templates/view_cards/culture-page-->
+<!--<div class="gt-view-cards gt-margin">-->
+    <!--<div class="container gt-margin">-->
+        <!--<div class="gt-text-block gt-margin">-->
+            <!--<h2 class="gt-black">Топ 100 достопримечательностей</h2>-->
+            <!--<p class="gt-black">-->
+                <!--Рейтинг составлен по результатам голосования посетителей сайта-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="container container-no-padd gt-margin">-->
+        <!--<div class="gt-slider gt-view-cards-slider  gt-slider-tram gt-slider-has-arrow gt-slider-no-padding" data-count="4">-->
+            <!--<div class="gt-slider-container">-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="container container-no-padd gt-margin">-->
+        <!--<div class="gt-slider gt-view-cards-slider  gt-slider-tram gt-slider-has-arrow gt-slider-no-padding" data-count="4">-->
+            <!--<div class="gt-slider-container">-->
+                <!--//= ./_view-card-horisontal-->
+                <!--//= ./_view-card-horisontal-->
+                <!--//= ./_view-card-horisontal-->
+                <!--//= ./_view-card-horisontal-->
+                <!--//= ./_view-card-horisontal-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="container container-no-padd gt-margin">-->
+        <!--<div class="gt-slider gt-view-cards-slider  gt-slider-tram gt-slider-has-arrow gt-slider-no-padding" data-count="4">-->
+            <!--<div class="gt-slider-container">-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+                <!--//= ./_view-card-horisontal-rating-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
 <!-- ** -->
 
 
-<!--//= templates/view_cards/culture-object-page-->
+<div class="container container-no-padd gt-margin">
+    <div class="gt-view-cards-container gt-margin">
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="gt-slider-inner gt-view-cards-inner">
+            <div class="gt-slider-inner-outer gt-view-cards-inner-outer">
+                <div class="gt-slider-inner-img  gt-view-cards-inner-img">
+                    <div class="gt-img-holder-abs">
+                        <img src="./img/country/view-card.png" alt="">
+                    </div>
+                </div>
+                <div class="gt-view-cards-text">
+                    <!--<div class="gt-view-cards-rating">-->
+                        <!--<span>200</span>-->
+                    <!--</div>-->
+                    <div class="gt-view-cards-text-left">
+                        <a href="/showplace.html">Эйфелева башня в две строки</a>
+                    </div>
+                    <div class="gt-view-cards-text-right">
+                        <p>Босния и Герцеговина</p>
+                        <p class="gt-view-cards-counter">Еще <span> +7</span>
+                        </p>
+                    </div>
+                    <div class="gt-view-cards-marks">
+                        <i class="gt-view-cards-marks-seven"></i>
+                        <i class="gt-view-cards-marks-top"></i>
+                        <i class="gt-view-cards-marks-unesco"></i>
+                        <i class="gt-view-cards-marks-guinness"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="gt-view-cards-icons">
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-visit"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-pin-plus"></div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-share">
+                    <div class="gt-view-cards-icons-share-inner">
+                        <a href=".#"><i class="fab fa-facebook-f"></i></a>
+                        <a href=".#"><i class="fab fa-twitter"></i></a>
+                        <a href=".#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href=".#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="gt-view-cards-icons-item">
+                    <div class="gt-view-cards-icons-bookmarks"></div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <div style="height: 500px"></div>

@@ -35,6 +35,7 @@ GoToTrip = function () {
     //= ./_partnership
 
     //= ./_select
+    //= ./_top_cards
 
 
 

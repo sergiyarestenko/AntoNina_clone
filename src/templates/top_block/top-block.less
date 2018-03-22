@@ -12,7 +12,7 @@
 
   .container {
     min-height: 300px;
-   padding-top: 90px;
+    padding-top: 90px;
     padding-bottom: 80px;
     flex-direction: column;
     position: relative;
@@ -72,9 +72,25 @@
         background-color: @white;
         position: absolute;
         left: 0;
-       bottom: 0px;
+       bottom: 0;
       }
     }
 
+  }
+
+  &-hundred{
+    margin-bottom: 80px;
+   .container{
+     min-height: 600px;
+   }
+    //&-inner{
+    //  z-index: 500;
+    //  position: absolute;
+    //  bottom: -65px;
+    //  left: 0;
+    //  right: 0;
+    //  width: 100%;
+    //  flex-direction: column-reverse;
+    //}
   }
 }

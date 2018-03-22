@@ -10,11 +10,19 @@
 
   font-size: 14px;
   .gt-box-shadow();
-  a{
+  a {
     color: @grey-link;
   }
   &-wrapper {
-    margin-top: -65px;
+  position: relative;
+    top: -65px;
+    .test();
+    .container{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
   &-all {
     a {
@@ -119,7 +127,6 @@
         color: @blue;
         background-size: auto 48px;
         border-color: @blue;
-
 
       }
 
