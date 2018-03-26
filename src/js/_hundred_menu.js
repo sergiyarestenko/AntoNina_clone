@@ -6,7 +6,7 @@ this.manageGtActiveUlMenu = function (el) {
     $(el).addClass("gt-active");
 };
 
-
+//
 // if ($("*").is(".gt-hundred-menu")) {
 //     $(".gt-hundred-menu").on("click", function (event) {
 //         event.preventDefault();

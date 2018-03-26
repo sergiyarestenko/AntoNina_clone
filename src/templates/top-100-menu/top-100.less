@@ -10,84 +10,100 @@
 
   font-size: 14px;
   .gt-box-shadow();
-  a {
-    color: @grey-link;
-  }
+
   &-wrapper {
-  position: relative;
+    position: relative;
     top: -65px;
-    .test();
-    .container{
+    margin-bottom: -50px;
+
+    .container {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
+      flex-direction: column-reverse;
+    }
+    .gt-search-panel {
+      margin-bottom: 50px;
+      position: static;
+      &-form {
+        input {
+          &[type = "text"] {
+            .gt-placeholder(@white-80);
+          }
+        }
+      }
+      &-select{
+        margin-bottom: 200px;
+      }
     }
   }
-  &-all {
-    a {
-      background-image: url('../img/icons/globe-icon-grey.svg');
-    }
-    &:hover,
-    &.gt-active {
-      a {
-        background-image: url('../img/icons/globe-icon-blue.svg');
-      }
+  svg {
+    position: absolute;
+
+    height: auto;
+
+    bottom: 60px;
+    .gt-transition();
+  }
+  path {
+    fill: @grey-link;
+    .gt-transition();
+  }
+
+  &-all, &-wonders {
+    svg {
+      width: 36px;
+      left: ~"calc(50% - 18px)";
     }
   }
   &-top {
-    a {
-      background-image: url('../img/icons/top-100-icon-grey.svg');
-    }
-    &:hover,
-    &.gt-active {
-      a {
-        background-image: url('../img/icons/top-100-icon-blue.svg');
-      }
+    svg {
+      width: 52px;
+      left: ~"calc(50% - 26px)";
     }
   }
   &-culture {
-    a {
-      background-image: url('../img/icons/showplace-icon-grey.svg');
-    }
-    &:hover,
-    &.gt-active {
-      a {
-        background-image: url('../img/icons/showplace-icon-blue.svg');
-      }
+    svg {
+      width: 42px;
+      left: ~"calc(50% - 21px)";
     }
   }
   &-nature {
-    a {
-      background-image: url('../img/icons/nature-icon-grey.svg');
-    }
-    &:hover,
-    &.gt-active {
-      a {
-        background-image: url('../img/icons/nature-icon-blue.svg');
-      }
+    svg {
+
+      width: 50px;
+      left: ~"calc(50% - 25px)";
     }
   }
   &-relax {
-    a {
-      background-image: url('../img/icons/relax-icon-grey.svg');
-    }
-    &:hover,
-    &.gt-active {
-      a {
-        background-image: url('../img/icons/relax-icon-blue.svg');
-      }
+    svg {
+      width: 46px;
+      left: ~"calc(50% - 23px)";
     }
   }
-  &-wonders {
-    a {
-      background-image: url('../img/icons/wonders-icon-grey.svg');
-    }
-    &:hover,
-    &.gt-active {
-      a {
-        background-image: url('../img/icons/wonders-icon-blue.svg');
+
+  a {
+    color: @grey-link;
+    font-weight: @normal;
+    width: 100%;
+    height: 100%;
+    padding: 90px 15px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: @white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-bottom: 2px solid transparent;
+    .gt-transition();
+    &:hover {
+      color: @blue;
+      path {
+        fill: @blue;
       }
+
     }
   }
 
@@ -95,41 +111,28 @@
     flex: 1 1 1px;
     position: relative;
 
-    a {
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      padding: 90px 15px 15px;
-      background-repeat: no-repeat;
-      background-position: 50% 25px;
-      background-size: auto 40px;
-      background-color: @white;
-      position: absolute;
-      left: 0;
-      top: 0;
-      border-bottom: 2px solid transparent;
-      .gt-transition();
-    }
     &.gt-active {
       z-index: 5;
-
       a {
         top: -10%;
-        left: -10%;
+        left: -5%;
         height: 120%;
-        width: 120%;
-        padding-top: 100px;
-        background-position: 50% 20px;
+        width: 110%;
+        padding-top: 110px;
         .gt-box-shadow();
         font-size: larger;
         color: @blue;
-        background-size: auto 48px;
         border-color: @blue;
-
+      }
+      svg {
+        transform: scale(1.2, 1.2);
+        bottom: 70px;
+      }
+      path {
+        fill: @blue;
       }
 
     }
   }
+
 }

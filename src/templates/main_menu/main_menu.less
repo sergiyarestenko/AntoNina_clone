@@ -2,8 +2,8 @@
 @import "../../stylesheets/_variables";
 @import "../../stylesheets/_mixin";
 
-.gt-header-plane-top{
-    background: @black-70;
+.gt-header-plane-top {
+  background: @black-70;
 }
 
 .gt-header {
@@ -452,6 +452,21 @@
 .gt-not-registered {
   .gt-registered {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .gt-header {
+    &-menu {
+
+      ul {
+        li {
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+      }
+
+    }
   }
 }
 

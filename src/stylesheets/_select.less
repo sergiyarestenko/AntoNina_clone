@@ -36,25 +36,45 @@
   }
 
   .select__gap {
-    background: transparent;
-    color: #467797;
-    border: 1px solid #467797;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 10px 15px;
+    display: flex;
+    height: 100%;
     cursor: pointer;
     position: relative;
+    padding-left: 1em;
+    padding-right: 3em;
+    align-items: center;
+    p {
+      margin-top: auto;
+      margin-bottom: auto;
+     width: auto;
+
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      height: 20px;
+      width: 20px;
+      background: url("../img/icons/arrow-right-grey.svg") no-repeat 50% 50%;
+      background-size: contain;
+      z-index: 500;
+      transform: rotate(90deg);
+      .gt-transition();
+    }
+    &.on {
+      &:after {
+        transform: rotate(-90deg);
+      }
+    }
   }
 
   .on.select__gap,
   .select__gap:hover {
-    color: #467797;
   }
 
   .select__list {
-    background: transparent;
-    border: 1px solid #467797;
-    margin: 0px 0;
+    margin: 0 0;
   }
 
   .select__list.on {
@@ -63,43 +83,12 @@
 
   .select__item span {
     display: block;
-    padding: 10px 15px;
     cursor: pointer;
-    color: #333;
   }
 
   .select__item.selected,
   .select__item span:hover {
-    color: #467797;
   }
 
-  .select__gap:after {
-    content: '';
-    display: block;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    margin-top: -7px;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 14px solid #000;
 
-    -webkit-transition: all .27s ease-in-out;
-    -o-transition: all .27s ease-in-out;
-    transition: all .27s ease-in-out;
-
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  .on.select__gap:after {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
 }

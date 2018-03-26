@@ -10,15 +10,15 @@
     background-size: 1.1em 1.1em;
   }
   &-panel {
-   width: 100%;
-    //position: absolute;
+    position: absolute;
+    width: 100%;
     margin-bottom: 20px;
     left: 0;
     right: 0;
     bottom: 50px;
     &-form {
       width: 430px;
-      margin: auto ;
+      margin: auto;
       position: relative;
       input {
         &[type = "text"] {
@@ -43,6 +43,27 @@
         height: 100%;
       }
     }
-
+    &-select {
+      width: 470px;
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 500;
+      form {
+        width: 100%;
+        height: 100%;
+      }
+      .select__gap,.select__list {
+        background-color: @white-90;
+      }
+      .select__list{
+        max-height: 350px;
+        overflow: auto;
+        .gt-scrollbar();
+      }
+      .select__item{
+        padding: .5em 1em;
+      }
+    }
   }
 }
