@@ -2,130 +2,41 @@
 @import "../../stylesheets/_variables";
 @import "../../stylesheets/_mixin";
 
-.container.gt-action-menu {
-  padding: 0;
-}
-
 .gt-action-menu {
   flex-direction: row;
-  &-wrapper {
-    height: 400px;
-    background: url("../img/main-bg-1.png") no-repeat 0 0;
-    background-size: contain;
+  svg {
+
+    width: 50%;
+    height: auto;
   }
-
-  .gt-events {
-    .icon-holder {
-      background-image: url("../img/icons/events-icon-blue.svg");
-      background-position: 50% 50%;
-      background-size: 50% auto;
-
-      &:hover {
-        background-image: url("../img/icons/events-icon-white.svg");
-
-      }
-
-    }
-
+  path {
+    fill: @blue;
+    .gt-transition();
   }
-  .gt-publications {
-    .icon-holder {
-      background-image: url("../img/icons/publications-icon-blue.svg");
-      background-position: 50% 50%;
-      background-size: 50% auto;
-      &:hover{
-        background-image: url("../img/icons/publications-icon-white.svg");
+  .gt-icon-holder {
+    justify-content: center;
+    align-items: center;
 
+    &:hover {
+      path {
+        fill: @white;
       }
     }
-
   }
-
-  .gt-routes {
-    .icon-holder {
-      background-image: url("../img/icons/routes-icon-blue.svg");
-      background-position: 50% 50%;
-      background-size: 50% auto;
-      &:hover{
-        background-image: url("../img/icons/routes-icon-white.svg");
-
-      }
-    }
-
-  }
-
-  .gt-plane-round-world {
-    .icon-holder {
-      background-image: url("../img/icons/plane-round-world-icon-blue.svg");
-      background-position: 45% 45%;
-      background-size: 55% auto;
-      &:hover{
-        background-image: url("../img/icons/plane-round-world-icon-white.svg");
-
-      }
-    }
-
-  }
-
-  .gt-castle {
-    .icon-holder {
-      background-image: url("../img/icons/castle-icon-blue.svg");
-      background-position: 50% 50%;
-      background-size: 50% auto;
-      &:hover{
-        background-image: url("../img/icons/castle-icon-white.svg");
-
-      }
-    }
-
-  }
-
-  .gt-wine {
-    .icon-holder {
-      background-image: url("../img/icons/wine-icon-blue.svg");
-      background-position: 50% 50%;
-      background-size: 75% auto;
-      &:hover{
-        background-image: url("../img/icons/wine-icon-white.svg");
-
-      }
-    }
-
-  }
-  .gt-paper {
-    .icon-holder {
-      background-image: url("../img/icons/paper-icon-blue.svg");
-      background-position: 50% 50%;
-      background-size:  auto 45%;
-      &:hover{
-        background-image: url("../img/icons/paper-icon-white.svg");
-
-      }
-    }
-
-  }
-  .gt-card-edit {
-    .icon-holder {
-      background-image: url("../img/icons/card-edit-icon-blue.svg");
-      background-position: 60% 50%;
-      background-size:  auto 45%;
-      &:hover{
-        background-image: url("../img/icons/card-edit-icon-white.svg");
-
-      }
-    }
-
-  }
-
   &-inner {
     width: 33.3%;
     flex-direction: row;
     position: relative;
     min-height: 90px;
     padding: 60px 0 60px 100px;
-
   }
-  .icon-holder {
+
+  &-main-page {
+    height: 400px;
+    background: url("../img/main-bg-1.png") no-repeat 0 0;
+    background-size: contain;
+  }
+  .gt-icon-holder {
     position: absolute;
     left: 0;
     top: 60px;
@@ -135,6 +46,9 @@
     background-color: @white;
     background-repeat: no-repeat;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
     .gt-transition();
     span {
       position: absolute;
@@ -161,9 +75,12 @@
         background: @white;
         box-shadow: 1px 0 5px rgba(0, 0, 0, .25);
       }
+      path {
+        fill: @white;
+      }
     }
   }
-  .text-holder {
+  .gt-text-holder {
     flex-direction: column;
     padding: 0 15px;
     width: 100%;
@@ -173,7 +90,7 @@
         font-size: 16px;
         font-weight: @bold;
       }
-      &.text-inner {
+      &.gt-text-inner {
         font-size: 14px;
         font-weight: @normal;
         line-height: 1.5;
@@ -181,14 +98,10 @@
       }
     }
   }
-  &-two-columns {
-    background: none;
-    height: auto;
-  }
+
   &-column {
     width: 50%;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 
     p {
@@ -197,17 +110,14 @@
       flex-shrink: 1;
     }
     &-inner {
+      position: relative;
+      padding-top: 120px;
       width: 33%;
-      flex-direction: column;
       font-size: 14px;
-
-      .icon-holder {
-        position: static;
-        //align-self: center;
-        flex-shrink: 0;
+      .gt-icon-holder {
+        top: 0;
       }
       p {
-        padding-top: 20px;
         color: @black;
         padding-right: 15px;
       }
@@ -216,34 +126,38 @@
 }
 
 @media screen and (max-width: 1230px) {
-  .container.gt-action-menu {
-    padding-left: inherit;
-    padding-right: inherit;
-  }
-
   .gt-action-menu {
-    &-wrapper {
+    flex-wrap: wrap;
+    &-main-page {
       height: 350px;
     }
-    &-two-columns {
-      height: auto;
-    }
-    &-inner {
-      padding: 60px 60px 60px 70px;
-    }
-    .icon-holder {
-      height: 70px;
-      width: 70px;
-      span {
-        font-size: 13px;
-        line-height: 12px;
-        width: 20px;
-        height: 20px;
+    &-column {
+      width: 100%;
+      p {
+        font-size: 16px;
+        padding-right: 0;
+        margin-bottom: 30px;
+      }
+      &-inner {
+        .gt-icon-holder {
+          left: ~"calc(50% - 45px)";
+        }
+        p {
+          justify-content: center;
+          margin-left: 15px;
+          margin-right: 15px;
+          margin-bottom: 0 !important;
+        }
       }
     }
-    .text-holder {
+    &-inner {
+      padding-right: 30px;
+
+    }
+
+    .gt-text-holder {
       p {
-        &.text-inner {
+        &.gt-text-inner {
           padding-top: 20px;
         }
       }
@@ -253,16 +167,11 @@
 
 @media screen and (max-width: 1023px) {
   .gt-action-menu {
-    &-wrapper {
+    &-main-page {
       height: 290px;
       background-size: cover;
     }
-    &-two-columns {
-      height: auto;
-      .gt-action-menu {
-        flex-wrap: wrap;
-      }
-    }
+
     &-inner {
       height: auto;
       padding: 65px 0 0;
@@ -275,7 +184,7 @@
         justify-content: flex-end;
       }
     }
-    .icon-holder {
+    .gt-icon-holder {
       position: relative;
       left: auto;
       top: auto;
@@ -288,19 +197,38 @@
         line-height: 27px;
       }
     }
-    .text-holder {
+    .gt-text-holder {
       display: none;
     }
+
     &-column {
       p {
+        font-size: 16px;
         padding-right: 0;
+        margin-bottom: 30px;
       }
       &-inner {
-        .icon-holder {
-          align-self: center;
+        padding-top: 165px;
+        flex-direction: column;
+        .gt-icon-holder {
+          position: absolute;
+          top: 0;
+          left: ~"calc(50% - 70px)";
         }
         p {
           text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .gt-action-menu {
+    &-column {
+      &-inner {
+        p {
+          font-size: 14px;
         }
       }
     }
@@ -318,7 +246,7 @@
     &-inner {
       padding-top: 45px;
     }
-    .icon-holder {
+    .gt-icon-holder {
       height: 110px;
       width: 110px;
       span {
@@ -329,7 +257,21 @@
       }
     }
     &-column {
-      align-items: flex-start;
+      p {
+        font-size: 15px;
+        margin-bottom: 1em;
+      }
+      &-inner {
+        padding-top: 125px;
+        .gt-icon-holder {
+          left: ~"calc(50% - 55px)";
+        }
+        p {
+          font-size: 13px;
+          margin-left: .5em;
+          margin-right: .5em;
+        }
+      }
     }
   }
 }
@@ -345,7 +287,7 @@
     &-inner {
       padding-top: 30px;
     }
-    .icon-holder {
+    .gt-icon-holder {
       height: 90px;
       width: 90px;
       span {
@@ -356,17 +298,30 @@
       }
     }
     &-column {
-      font-size: 15px;
+      flex-direction: column;
       &-inner {
-        font-size: 13px;
+        position: static;
+        flex-direction: row;
+        padding-top: 15px;
+        align-items: center;
+        width: 100%;
+        font-size: 14px;
+        .gt-icon-holder {
+          position: static !important;
+        }
+        p {
+          text-align: left;
+          margin-left: 15px;
+        }
       }
+
     }
   }
 }
 
 @media screen and (max-width: 359px) {
   .gt-action-menu {
-    .icon-holder {
+    .gt-icon-holder {
       height: 65px;
       width: 65px;
       span {

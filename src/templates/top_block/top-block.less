@@ -16,7 +16,22 @@
     flex-direction: column;
     position: relative;
   }
+  h1, p {
+    margin: auto 0;
+    justify-content: flex-start;
+    width: auto;
+  }
+  h1 {
+    font-weight: @bold;
+    font-size: 32px;
+    position: relative;
+  }
+  p {
+    font-size: 18px;
+    font-weight: @normal;
+  }
   &-inner {
+    line-height: 1.4;
     margin-top: 90px;
     margin-bottom: 15px;
     color: @white;
@@ -27,22 +42,7 @@
     flex-direction: column;
     min-height: 340px;
     padding: 60px 60px 60px 90px;
-    h1, p {
-      margin: auto 0;
-      justify-content: flex-start;
-      width: auto;
-    }
-    h1 {
-      font-weight: @bold;
-      font-size: 32px;
-      line-height: 45px;
-      position: relative;
-    }
-    p {
-      font-size: 18px;
-      font-weight: @normal;
-      line-height: 24px;
-    }
+
     &-line {
       background-color: @white;
       height: 2px;
@@ -53,11 +53,9 @@
     &.gt-top-inner-large {
       h1 {
         font-size: 42px;
-        line-height: 50px;
       }
       p {
         font-size: 24px;
-        line-height: 36px;
       }
 
     }
@@ -74,6 +72,7 @@
         bottom: 0;
       }
     }
+
   }
   &-hundred {
     margin-bottom: 80px;
@@ -86,5 +85,85 @@
 @media screen and (max-width: 1023px) {
   .gt-top {
 
+    &-inner {
+
+      margin-top: 60px;
+      width: 400px;
+      padding: 60px 40px 40px 40px;
+      min-height: 0;
+      h1{
+        font-size: 26px;
+        //margin-bottom: 1em;
+      }
+      p{
+        font-size: 18px;
+      }
+
+      &.gt-top-inner-large {
+        h1 {
+          font-size: 26px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      &-underline {
+        margin-bottom: 1em !important;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .gt-top {
+    &-inner {
+      margin-top: 240px;
+      width: 100%;
+      &.gt-top-inner-large {
+        h1 {
+          font-size: 44px;
+        }
+        p {
+          font-size: 33px;
+        }
+      }
+
+    }
+
   }
 }
+@media screen and (max-width: 600px) {
+  .gt-top {
+    &-inner {
+      margin-top: 160px;
+      &.gt-top-inner-large {
+        h1 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .gt-top {
+    &-inner {
+      margin-top: 140px;
+      margin-bottom: 50px;
+      &.gt-top-inner-large {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
