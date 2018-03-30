@@ -248,6 +248,9 @@
     b {
       font-weight: inherit;
     }
+    .gt-a-news {
+      margin-top: .5em;
+    }
   }
   &-aside {
     flex-direction: column;
@@ -303,7 +306,6 @@
       padding-left: 0;
       padding-right: 0;
     }
-
     .gt-news-outer-big {
       width: 100%;
       flex: 1 1 auto;
@@ -317,7 +319,6 @@
     left: 0;
     transition: all 2s linear;
   }
-
   &-page {
     flex-direction: row;
     &-container {
@@ -329,7 +330,7 @@
       &-one-thirds {
         width: 33.3333%;
         flex-direction: column;
-        >a{
+        > a {
           margin-left: 15px;
         }
       }
@@ -339,11 +340,196 @@
       & + .gt-news-page-inner {
         margin-top: 30px;
       }
-      &.gt-news-outer{
+      &.gt-news-outer {
         padding-left: 0;
         padding-right: 0;
       }
     }
   }
 
+}
+
+@media screen and (max-width: 1230px) {
+
+  .gt-news {
+    &-container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .gt-news {
+
+    &-outer {
+      height: 470px;
+      &-big {
+        width: 100%;
+      }
+      &-small {
+        width: 50%;
+
+      }
+      &-margin {
+        &-sm {
+          margin-top: 30px;
+        }
+      }
+
+    }
+
+    &-small {
+      &-img {
+        height: 60%;
+      }
+      &-text {
+        height: 40%;
+      }
+    }
+    &-prev {
+      height: 75px;
+      &-img {
+        width: 90px;
+      }
+    }
+
+    &-header {
+      font-size: 21px;
+    }
+    &-link {
+      font-size: 18px;
+      line-height: 16px;
+      i, span {
+        line-height: 16px;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .gt-news {
+    &-container {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+    &-outer {
+      padding: 0 12px;
+      height: 280px;
+    }
+    &-small {
+      &-img {
+        height: 50%;
+      }
+      &-text {
+        height: 50%;
+      }
+    }
+    &-prev {
+      height: 40px;
+      font-size: 11px;
+      &-img {
+        width: 50px;
+      }
+      &-date {
+        margin-top: .25em;
+        font-size: 10px;
+      }
+    }
+    &-image {
+      &-text {
+        &-title {
+          font-size: 13px;
+        }
+        &-header {
+          font-size: 24px;
+        }
+      }
+    }
+    &-plane {
+      font-size: 15px;
+      h2 {
+        font-size: 24px;
+        margin: 0 0 .5em;
+      }
+      p {
+        margin: 0 0 .25em;
+      }
+      a {
+        margin: .5em 0 0;
+      }
+    }
+    &-header {
+      font-size: 16px;
+    }
+    &-link {
+      font-size: 13px;
+      line-height: 11px;
+      i, span {
+        line-height: 11px;
+
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 479px) {
+
+  .gt-news {
+    &-container {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &-outer {
+      padding: 0 0px;
+      &-big {
+        height: 213px;
+      }
+      &-small {
+        height: 385px;
+        width: 100%;
+      }
+      &-margin {
+        &-xxs {
+          margin-top: 30px;
+        }
+      }
+      &-height-xxs {
+        height: auto;
+      }
+
+    }
+    &-small{
+      &-text{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    &-prev {
+      height: 65px;
+      margin-bottom: 15px;
+      &-img {
+        width: 90px;
+      }
+    }
+    &-plane {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      h2 {
+        margin-bottom: 1em;
+      }
+      p {
+        padding-bottom: .5em;
+      }
+      a{
+        margin-top: 2em;
+      }
+    }
+
+  }
 }

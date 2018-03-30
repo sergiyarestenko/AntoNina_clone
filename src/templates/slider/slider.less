@@ -273,6 +273,7 @@
     display: block;
     .gt-blue {
       padding-bottom: 10px;
+      text-transform: uppercase;
     }
     p {
       line-height: 23px;
@@ -341,7 +342,7 @@
     margin-top: .5em;
   }
   .gt-text-block {
-    p{
+    p {
       margin-top: .5em;
       margin-bottom: 1.5em;
     }
@@ -480,7 +481,7 @@
       opacity: .3;
       &.left {
 
-        left:.5em;
+        left: .5em;
       }
       &.right {
         right: .5em;
@@ -502,6 +503,7 @@
 @media screen and (max-width: 1230px) {
   .gt-shadow-slider {
     &-text {
+
       top: -60px;
     }
   }
@@ -514,8 +516,10 @@
 
   .gt-shadow-slider {
     &-text {
+      height: auto;
+      padding-top: 0;
       width: 50%;
-      top: -80px;
+      top: 100px;
       left: 24px;
       &-shadow {
         width: 75%;
@@ -530,8 +534,11 @@
   }
 
   .gt-shadow-slider {
+
     .gt-slider {
-      height: 350px;
+      margin-top: 60px;
+      height: 380px;
+      width: 100%;
     }
     h2 {
       font-size: 24px;
@@ -540,18 +547,17 @@
       margin-bottom: 20px;
     }
     &-text {
-      top: -140px;
+      top: -20px;
       left: 24px;
-      width: 60%;
+      width: 40%;
       &-shadow {
         width: 100%;
+
         background-image: linear-gradient(
-                to bottom right,
+                to right,
                 rgba(255, 255, 255, 1) 0%,
-                rgba(255, 255, 255, .95) 25%,
-                rgba(255, 255, 255, .5) 40%,
-                rgba(255, 255, 255, .15) 50%,
-                rgba(255, 255, 255, 0) 75%
+                rgba(255, 255, 255, .75) 35%,
+                rgba(255, 255, 255, 0) 50%
         );
       }
     }
@@ -560,7 +566,7 @@
 
 @media screen and (max-width: 666px) {
   .gt-action-menu-wrapper + .gt-shadow-slider {
-    margin-top: -70px;
+    margin-top: -60px;
   }
 
   .gt-shadow-slider {
@@ -569,16 +575,14 @@
       width: 100%;
     }
     &-text {
-      top: -170px;
-      width: 80%;
+      top: -90px;
+      width: 70%;
       &-shadow {
         background-image: linear-gradient(
                 to bottom right,
                 rgba(255, 255, 255, 1) 0%,
-                rgba(255, 255, 255, .95) 25%,
-                rgba(255, 255, 255, .75) 40%,
-                rgba(255, 255, 255, .5) 50%,
-                rgba(255, 255, 255, 0) 75%
+                rgba(255, 255, 255, .85) 25%,
+                rgba(255, 255, 255, 0) 50%
         );
       }
     }
@@ -587,12 +591,30 @@
 
 @media screen and (max-width: 479px) {
   .gt-action-menu-wrapper + .gt-shadow-slider {
-    margin-top: -20px;
+    margin-top: -235px;
   }
 
   .gt-shadow-slider {
+    flex-direction: column;
+    &-text {
+      padding-bottom: 2em;
+      position: static;
+
+      width: 100%;
+      //top: -200px;
+      //left: 0;
+      &-shadow {
+        display: none;
+      }
+      a {
+        margin-top: 2em;
+        position: static;
+      }
+    }
     .gt-slider {
+      margin-top: 0;
       height: 500px;
+
     }
   }
 }

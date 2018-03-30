@@ -14,11 +14,18 @@
     width: 33%;
     position: relative;
     padding-right: 15px;
+    padding-bottom: 3em;
+    H2, p {
+
+      margin-top: auto;
+    }
     h2 {
+      margin-bottom:1em;
       font-size: 40px;
       font-weight: @bold;
       color: @black;
-      padding-top: 130px;
+      padding-top: 80px;
+      //padding-bottom: 2em;
       position: relative;
       background: url("../img/icons/logo-link-icon.svg") no-repeat 0 90%;
       background-size: auto 3em;
@@ -34,19 +41,16 @@
     }
     p {
       font-size: 16px;
-      margin-top: 2em;
       line-height: 1.5;
-      padding-bottom: 90px;
     }
     a {
       position: absolute;
       left: 0;
-      bottom: 50px;
+      bottom: 1em;
       font-size: 12px;
       font-weight: @bold;
       text-transform: uppercase;
-      color:@grey-dark;
-
+      color: @grey-dark;
 
     }
   }
@@ -65,7 +69,7 @@
 }
 
 @media screen and (max-width: 1230px) {
-  .gt-link-block {
+  .gt-one-new {
     min-height: 350px;
     &-text {
       h2 {
@@ -80,7 +84,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .gt-link-block {
+  .gt-one-new {
     min-height: 260px;
     &-text {
       h2 {
@@ -88,7 +92,7 @@
         font-size: 36px;
       }
       p {
-        padding-bottom: 50px;
+        padding-bottom: 1em;
       }
 
       a {
@@ -99,7 +103,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .gt-link-block {
+  .gt-one-new {
     min-height: 210px;
     &-text {
       h2 {
@@ -111,7 +115,7 @@
 }
 
 @media screen and (max-width: 666px) {
-  .gt-link-block {
+  .gt-one-new {
     flex-wrap: wrap;
     &-text {
       width: 100%;
@@ -121,7 +125,7 @@
       }
       p {
         font-size: 16px;
-        padding-bottom: 60px;
+        //padding-bottom: 60px;
       }
     }
     &-img {
