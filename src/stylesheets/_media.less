@@ -76,6 +76,28 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  .gt-switch{
+    &-main{
+      height: 16px;
+      width:30px;
+      .line {
+        width: 28px;
+      }
+      &.gt-open {
+        .line-1 {
+          transform: translateY(7px) translateX(-2px) rotate(45deg);
+        }
+        .line-2 {
+          opacity: 0;
+        }
+        .line-3 {
+          transform: translateY(-9px) translateX(-2px) rotate(-45deg);
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 359px) {

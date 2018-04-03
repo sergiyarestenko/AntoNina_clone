@@ -1,6 +1,5 @@
 if ($("div").is(".gt-inner-scroll")) {
     $('.gt-inner-scroll').each(function () {
-
         $(this).niceScroll({
             cursoropacitymin: '1',
             cursoropacitymax: '1',
