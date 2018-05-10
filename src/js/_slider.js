@@ -160,14 +160,11 @@ this.createSlider = function (currSlider, position) {
         }
     }
 
-
-
     function tramSliderMove() {
         container.children().removeClass('gt-open');
         container.animate({left: -currPosition * baseWidth}, tramAnimation);
         container.children().eq(currPosition).addClass('gt-open');
     }
-
 
     function fadeSliderMove(position) {
         var index = position || currPosition;
@@ -186,7 +183,6 @@ this.createSlider = function (currSlider, position) {
         currSlider.on("touchstart", function (event) {
             var e = event.originalEvent;
             initialPoint = Math.abs(e.touches[0].pageX);
-            console.log("touchstart");
         });
         currSlider.on("touchend", function (event) {
             var e = event.originalEvent;
@@ -216,7 +212,6 @@ this.createSlider = function (currSlider, position) {
     }
 
     function setBaseWidth() {
-        console.log('setBaseWidth')
         baseWidth = currSlider.outerWidth() / screenConst;
         currSlider.find(".gt-slider-container").outerWidth((innerCount + 1) * baseWidth);
         inner.each(function () {
@@ -228,8 +223,14 @@ this.createSlider = function (currSlider, position) {
     function createCloneSlider(clickPosition) {
         if ($("div").is("#gt-clone")) return;
         self.fixBody();
-        var bodyWrapper = $("#gt-body-wrapper");
-        bodyWrapper.append('<div id = "gt-clone-wrapper"   class="container"><div id = "gt-clone" class="gt-slider gt-slider-clone gt-slider-fade gt-slider-num  gt-slider-has-arrow"><div id = "gt-clone-close" class = "gt-slider-clone-close"></div><div  id = "gt-clone-container" class="gt-slider-container"></div></div></div>');
+        var bodyWrapper = $("#gt-body-wrapper"),
+            html =  '<div id = "gt-clone-wrapper"   class="container">' +
+                        '<div id = "gt-clone" class="gt-slider gt-slider-clone gt-slider-fade gt-slider-num  gt-slider-has-arrow">' +
+                            '<div id = "gt-clone-close" class = "gt-slider-clone-close"></div>' +
+                            '<div  id = "gt-clone-container" class="gt-slider-container"></div>' +
+                        '</div>' +
+                    '</div>';
+        bodyWrapper.append(html);
         bodyWrapper.show();
         var cloneSlider = $('#gt-clone'),
             inners = currSlider.find(".gt-slider-inner").clone(true);

@@ -1,66 +1,69 @@
 this.setMediaPlayer = function (el) {
-    var controls = el.closest('.m-video-holder').find('.m-video-controls'),
-        play = controls.find('.m-video-controls-play'),
-        pause = controls.find('.m-video-controls-pause'),
-        resize = controls.find('.m-video-controls-resize'),
-        mute = controls.find('.m-video-controls-mute');
+
+    function showVideo() {
+        switcher.hide('slow');
+        el.find('.gt-video-inner').hide('slow');
+        el.find('.gt-video-wrapper').show();
+    }
+
+    var videoBlock = el.find('video'),
+        switcher = el.find('.gt-video-switch');
+
+    switcher.addClass('gt-bg-hide');
 
 
-    el.mediaelementplayer({
-        poster: el.data('img'),
-        // When using jQuery's `mediaelementplayer`, an `instance` argument
-        // is available in the `success` callback
+    videoBlock.mediaelementplayer({
+
         success: function (me, node, instance) {
-            console.log(me);
-            console.log(node);
-            console.log(instance);
-
-            play.on('click', function () {
-                if(me.paused){
-                    me.play();
-                }else{
-                    me.pause();
-                }
-
+            showVideo();
+            $(me).on('playing', function () {
+                self.moveVideoHeader(el)
             });
-
-            resize.on('click', function () {
-                me.setPlayerSize('100%', 'auto');
-
+            $(me).on('pause ended', function () {
+                self.unMoveVideoHeader(el)
             });
-            mute.on('click', function () {
-                if(me.muted){
-                    me.setMuted(false);
-                }else{
-                    me.setMuted(true);
-                }
-            });
-            function setPlayerFullScreenSize(){
-                console.log('setPlayerFullScreenSize')
-                return("'100%', 'auto'")
-            }
-
         }
     });
 
+};
 
-
+this.moveVideoHeader = function (el) {
+    el.find('.gt-video-text').addClass('gt-video-is-playing');
+    el.find('.mejs__controls').css('opacity','')
 
 };
+
+this.unMoveVideoHeader = function (el) {
+    el.find('.gt-video-text').removeClass('gt-video-is-playing');
+    el.find('.mejs__controls').css('opacity','0')
+
+};
+
+
+this.setMediaPlayerSwitch = function (el) {
+    el.find('.gt-video-switch').on('click', function () {
+        self.setMediaPlayer(el);
+    });
+};
+
 
 this.setMediaPlayerSrc = function () {
     var tag = document.createElement("script");
     tag.type = "text/javascript";
-    tag.src = "./libs/mediaelement-and-player.js";
+    tag.src = "./js/mediaelement-and-player.min.js";
     var lastScriptTag = $("script")[0];
     lastScriptTag.parentNode.insertBefore(tag, lastScriptTag);
 };
 
 
-if ($("video").is(".m-video")) {
-    $('.m-video').each(function () {
-        self.setMediaPlayer($(this));
-    })
+if ($("div").is(".gt-video")) {
+
+    // self.setMediaPlayerSrc();
+
+    $('.gt-video').each(function () {
+        self.setMediaPlayerSwitch($(this));
+    });
+
 
 }
 

@@ -10,3 +10,13 @@ this.deskTopMenuScroll = function () {
 if ($("*").is(".gt-top-plane")) {
     $('.gt-header').addClass('gt-header-plane-top')
 };
+
+
+
+self.deskTopMenuScroll();//_desctop_header_func.js
+
+docWindow.resize(function () {
+    self.deskTopMenuScroll();
+    if (gtHeader.hasClass("gt-open")) self.mobileMenuClose();
+
+})

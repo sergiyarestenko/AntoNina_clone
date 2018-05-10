@@ -11,7 +11,7 @@ GoToTrip = function () {
 
     //= ./_fix_body
 
-    //= ./_footer_height
+
     //= ./_header
 
     //= ./_up_button
@@ -36,9 +36,10 @@ GoToTrip = function () {
 
     //= ./_select
     //= ./_top_cards
+    //= ./_search
 
 
-
+    //= ./_footer_height
 /////////////////////does not work
 
     //= ./_place_cards
@@ -47,17 +48,9 @@ GoToTrip = function () {
 
 ///////////////////////////////
 
-    //= ./_doc_ready_listeners
     //= ./_doc_scroll_listeners
-    //= ./_doc_resize_listeners
-    //= ./_doc_load_listeners
 
     //= ./_test
-
-
-
-
-
 
 
 };

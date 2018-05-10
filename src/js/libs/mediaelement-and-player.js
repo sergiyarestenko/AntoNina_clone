@@ -3493,9 +3493,9 @@ var config = exports.config = {
 
 	showPosterWhenPaused: false,
 
-	defaultVideoWidth: 480,
+	defaultVideoWidth: 1920,
 
-	defaultVideoHeight: 270,
+	defaultVideoHeight: 1080,
 
 	videoWidth: -1,
 

@@ -12,7 +12,7 @@ this.imgHolderFunc = function (el) {
     else {
         $(el).addClass("gt-height");
     }
-    img.lazy({
+    img.Lazy({
         placeholder: "data:image/gif;base64,R0lGODlhEALAPQAPzl5uLr9Nrl8e7...",
         scrollDirection: 'vertical',
         effect: 'fadeIn',
@@ -25,6 +25,9 @@ this.imgHolderFunc = function (el) {
 
 
 this.setBg = function (el) {
+
+
+
     var bg,
         currToken,
         newToken,
@@ -42,10 +45,11 @@ this.setBg = function (el) {
             bg = el.attr("data-src-desctop");
             currToken = 2;
         }
-        el.css("background-image", "url('./img/bgs/" + bg + "'");
+        el.css("background-image",  "url('../assets/images/bgs/" + bg + "')");
+
     }
 
-    $(window).resize(function () {
+    docWindow.resize(function () {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () {
 
@@ -70,8 +74,31 @@ this.setBg = function (el) {
 if ($('div').is('.gt-bgs-holder')) {
 
     $('.gt-bgs-holder').each(function () {
+
         self.setBg($(this));
     })
 
 }
 self.setBg($('#gt-footer'));
+
+
+
+
+    if ($("div").is(".gt-img-holder-abs")) {
+        $(".gt-img-holder-abs").each(function () {
+            self.imgHolderFunc($(this));
+        });
+    }
+
+
+
+docWindow.resize(function () {
+
+    if ($("div").is(".gt-img-holder-abs")) {
+        $(".gt-img-holder-abs").each(function () {
+            $(this).removeClass("gt-width");
+            $(this).removeClass("gt-height");
+            self.imgHolderFunc($(this));
+        });
+    }
+});

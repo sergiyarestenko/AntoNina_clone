@@ -44,7 +44,6 @@ this.destroyViewCardListeners = function (el) {
 
 
 this.viewCardSocial = function (el) {
-    console.log('click social');
     self.closeShareViewCard(el);
 };
 

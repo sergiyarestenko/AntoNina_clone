@@ -16,6 +16,7 @@ module.exports = {
     js: './src/js/**.js',
     mainJs: './src/js/app.js',
     img: './src/img/**/*.*',
+    fonts: './src/fonts/**/*.*',
     jsLibs:  './src/js/libs/**.js'
 
   },
